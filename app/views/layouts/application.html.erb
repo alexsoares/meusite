@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<p style="color: green"><%= flash[:notice] %></p>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title>RS Tecnologia - Consultoria e soluções em tecnologia</title>
+    <%= stylesheet_link_tag 'scaffold' %>
+    <%= stylesheet_link_tag 'styles' %>
+    <%= javascript_include_tag :defaults %>
+</head>
+<body>
+<div id="doc" class="yui-t2">
+  <div id="hd">
+    <div id="header"><h1 align="center"><a href="http://www.ribeirosoares.com">Ribeiro Soares Tecnologia</a></h1></div>
+  </div>
+  <div id="bd">
+    <div id="yui-main">
+      <div class="yui-b">
+        <div class="content"><%=yield%></div>
+      </div>
+    </div>
+    <div class="yui-b">
+      <div id="secondary">
+          <ul>
+            
+            <li>Quem Somos</li>
+            <hr/>
+            <li>O que fazemos</li>
+            <hr/>
+            <li>Serviços
+              <ul>
+                <li>Web Sites</li>
+                <li>Consultoria</li>
+              </ul>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  <div id="ft">
+    <div id="footer"><h6 align="center">Copyright - Todos os direitos reservados.</h6></div>
+  </div>
+</div>
+</body>
+
+</html>
